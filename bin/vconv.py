@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-__author__ = "Vicentini Leonardo"
+__author__ = "Leonardo Vicentini"
 __version__ = "01_01"
 
 
