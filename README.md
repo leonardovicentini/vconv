@@ -2,42 +2,46 @@
 
 ---
 
-Programma per convertiere i video mkv in mp4.
+Program to convert mkv videos to mp4.
 
 ### Requirements
 
-ffmpeg
+python3, ffmpeg
 
 ## Usage
 
-Il programma prevede i seguenti parametri:
+The program has the following parameters:
 
-parametro | significato
+parameter | meaning
 --- | ---
---help | Restituisce il messaggio di help
---version | Restituisce la versione del programma
---verbose | Output verboso con le informazioni sulla conversione in corso.
---quiet | Non restituisce alcun output sul terminale.
---file FILE | Specifica il percorso del file mkv da convertire
---dir DIR | Specifica il percorso di una cartella contenente i file mkv
---out | Specifica una sottocartella del percorso indicato in cui verranno inseriti i file convertiti
---test | Se presente imposta la conversione solo per i primi 30 secondi di video.
+--help | Returns the help message
+--version | Returns the version of the program
+--verbose | Verbose output with information about the ongoing conversion
+--quiet | It doesn't return any output on the terminal
+--FILE file | Specifies the path of the mkv file to be converted
+--Dir DIR | Specifies the path of a folder containing the mkv files
+--out | Specifies a subfolder of the indicated path where the converted files will be placed
+--test | If present, set the conversion for the first 30 seconds of video only
 
-Per ulteriori informazioni digitare:
+For more information, type:
 
     $ vconv -h
 
 ## Changelog
 
+**2020-06-07 02_02**
+
+- Bug fixed: The program crashed if file had '.' in the name
+
 **2020-04-11 02_01**
 
-Aggiunti i Flags --quiet, --verbose e --test.
-Risolto bug per cui il programma crashava se il file esisteva
-già nella cartella di destinazione
+- Added: --quiet, --verbose and --test Flags.
+- Bug fixed: The program crashed if the file existed
+  already in the destination folder
 
 **2020-04-11 01_01**
 
-Prima versione
+- First version
 
 ## Author
 

@@ -16,7 +16,10 @@ boold = False
 
 def convert_file(file_path, output_folder):
     """
-    
+    Uses 'ffmpeg' to convert the mkv file to mp4.
+    :param file_path: str Relative file path path.
+    :param output_folder: str Relative directory path for the output.
+    :return: None.
     """
     global verbose, quiet, is_test
 
