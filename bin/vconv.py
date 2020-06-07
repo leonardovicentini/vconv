@@ -25,7 +25,7 @@ def convert_file(file_path, output_folder):
 
     dir_path = os.path.dirname(os.path.abspath(file_path))
     os.chdir(dir_path)
-    file_name = ntpath.basename(file_path).split(".")[0]
+    file_name = ".".join(ntpath.basename(file_path).split(".")[:-1])
 
     info = "" if verbose else "-loglevel quiet "
     is_test = "-t 30 " if is_test else ""
@@ -70,7 +70,7 @@ if __name__ == "__main__":
         if os.path.isdir(args.dir):
             for file in os.listdir(args.dir):
                 if file.endswith(".mkv"):
-                    file_name = file.split(".")[0]
+                    file_name = ".".join(file.split(".")[:-1])
                     convert_file(f"{args.dir}/{file_name}.mkv", output_dir)
         else:
             print("404 Dir not found. LOL :-)")
