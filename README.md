@@ -18,8 +18,8 @@ parameter | meaning
 --version | Returns the version of the program
 --verbose | Verbose output with information about the ongoing conversion
 --quiet | It doesn't return any output on the terminal
---FILE file | Specifies the path of the mkv file to be converted
---Dir DIR | Specifies the path of a folder containing the mkv files
+--file FILE | Specifies the path of the mkv file to be converted
+--dir DIR | Specifies the path of a folder containing the mkv files
 --out | Specifies a subfolder of the indicated path where the converted files will be placed
 --test | If present, set the conversion for the first 30 seconds of video only
 
